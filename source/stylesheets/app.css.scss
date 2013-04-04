@@ -8,6 +8,7 @@
 @import "foundation";
 @import "respond-to";
 @import "compass/css3";
+@import "compass/reset";
 
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
@@ -66,3 +67,4 @@
 .cf {
     *zoom: 1;
 }
+

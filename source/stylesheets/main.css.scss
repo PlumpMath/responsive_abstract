@@ -1,1 +1,241 @@
 @import "app";
+
+// Colors
+$main_orange: #e0876b;
+$off_black: #231f20;
+$footer_dark_blue: #365a7e;
+
+$test_grey: #E8E8E8;
+
+// Variables | Functions
+$breakpoints: 'default' (0 768px);
+
+// Typography
+
+// Styling
+
+body {
+  background: $main_orange;
+}
+
+#wrapper {
+  width: 98%;
+  margin: 1% auto 0 auto;
+  background: white;
+  position: relative;
+}
+
+// header
+.main_header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 148px;
+  z-index: 10;
+
+  .id_logo, .sub_logo {
+    width: 148px;
+    height: 148px;
+    background: $off_black;
+    float: left;
+    @include opacity(0.8);
+  }
+
+  .sub_logo {
+    @include opacity(0.3);
+  }
+
+  .main_nav {
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 60px;
+
+    .nav_block {
+      height: 100%;
+      width: 120px;
+      float: left;
+      margin-right: 2px;
+      background: $off_black;
+      @include opacity(0.6);
+      
+      &:first-of-type {
+        @include opacity(0.8);
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+// hero slider
+.hero_slider {
+  width: 100%;
+  background: $test_grey;
+
+  .outer {
+    width: 100%;
+    padding-top: 40%; // aspect ratio
+    position: relative;
+  }
+
+  .inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .hero_nav {
+    width: 100%;
+    height: 40px;
+    background: darken($test_grey, 20%);
+    text-align: center;
+
+    .hero_buttons {
+      margin: 0 auto;
+      width: 110px;
+      height: 100%;
+
+      .hero_button {
+        background: darken($test_grey, 10%);
+        float: left;
+        @include border-radius(50%);
+        width: 20px;
+        height: 20px;
+        margin: 10px 0 0 10px;
+
+        &:first-of-type {
+          margin-left: 0;
+          background: $main_orange;
+        }
+      }
+    }
+  }
+}
+
+// Middle content for main page
+.middle_content {
+  width: 100%;
+  padding-bottom: 5%;
+  margin-top: 50px;
+  // needs latest Compass, add '@import "compass"' to your scss
+  @include filter-gradient(#ffffff, #ffffff, vertical); // IE6-8
+  // IE9 SVG, needs conditional override of 'filter' to 'none'
+  $experimental-support-for-svg: true;
+  background-repeat: repeat;
+  @include background-image(linear-gradient(top, rgba(255,255,255,1) 20%,rgba(255,255,255,0) 100%), 
+                            url(../images/noisy_grid.png));
+  background-size: auto;
+}
+
+// Case Study
+
+.main_case_study {
+  text-align: center;
+
+  .top_header {
+    width: 400px;
+    margin: 0 auto;
+    padding: emCalc(10px) emCalc(30px);
+    border-bottom: 2px solid lighten($off_black, 60%);
+    margin-bottom: 50px;
+
+    .top_header_text {
+      width: 100%;
+      height: 40px;
+      background: $main_orange;
+    }
+  }
+
+  .content_case_study {
+    width: 100%;
+
+    // current case study copy
+    .copy_case_study {
+      width: 50%;
+      float: left;
+      padding-left: 10%;
+      text-align: left;
+      
+      .copy_header {
+        font-size: emCalc(60px);
+        word-spacing: -.9em;
+        line-height: emCalc(20px);
+        color: lighten($off_black, 40%);
+        max-width: 80%;
+      }
+
+      .copy {
+        font-size: emCalc(20px);
+        line-height: emCalc(20px);
+        color: lighten($off_black, 60%);
+        word-spacing: -0.7em;
+        max-width: 95%;
+        margin-top: emCalc(20px);
+      }
+    }
+
+    // current case study figure
+    .figure_case_study {
+      width: 50%;
+      float: left;
+      background: #86b3e9;
+
+      .outer {
+        width: 100%;
+        padding-top: 50%; // aspect ratio
+        position: relative;
+      }
+
+      .inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+// Case study grid
+.case_study_grid {
+  width: 100%;
+  margin-top: 50px;
+  padding: 0 6%;
+
+  .grid_content {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+    .grid_block {
+      width: 200px;
+      height: 200px;
+      float: left;
+      background: red;
+    }
+  }
+}
+
+// Footer
+.main_footer {
+  width: 100%;
+  height: 300px;
+  background: $footer_dark_blue;
+  padding-top: 4%;
+  text-align: center;
+
+  .footer_logo {
+    width: 120px;
+    height: 120px;
+    background: white;
+    @include opacity(0.8);
+    margin: 0 auto;
+  }
+}
