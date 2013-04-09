@@ -4593,18 +4593,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .cf {
   *zoom: 1; }
 
-/* line 17, main.css.scss */
+/* line 15, main.css.scss */
 body {
   background: #e0876b; }
 
-/* line 21, main.css.scss */
+/* line 19, main.css.scss */
 #wrapper {
   width: 98%;
   margin: 1% auto 0 auto;
   background: white;
   position: relative; }
 
-/* line 30, main.css.scss */
+/* line 28, main.css.scss */
 .top_header {
   width: 400px;
   margin: 0 auto;
@@ -4612,24 +4612,24 @@ body {
   border-bottom: 2px solid #beb6b8;
   margin-bottom: 50px; }
   @media (min-width: 0) and (max-width: 768px) {
-    /* line 30, main.css.scss */
+    /* line 28, main.css.scss */
     .top_header {
       width: 300px; } }
-  /* line 41, main.css.scss */
+  /* line 39, main.css.scss */
   .top_header.flipped {
     border-bottom: none;
     border-top: 2px solid #beb6b8; }
-  /* line 46, main.css.scss */
+  /* line 44, main.css.scss */
   .top_header .top_header_text {
     width: 100%;
     height: 40px;
     background: #e0876b; }
     @media (min-width: 0) and (max-width: 768px) {
-      /* line 46, main.css.scss */
+      /* line 44, main.css.scss */
       .top_header .top_header_text {
         height: 30px; } }
 
-/* line 58, main.css.scss */
+/* line 56, main.css.scss */
 .main_header {
   position: absolute;
   top: 0;
@@ -4637,7 +4637,7 @@ body {
   right: 0;
   height: 148px;
   z-index: 10; }
-  /* line 66, main.css.scss */
+  /* line 64, main.css.scss */
   .main_header .id_logo, .main_header .sub_logo {
     width: 148px;
     height: 148px;
@@ -4646,20 +4646,20 @@ body {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 0.8; }
     @media (min-width: 0) and (max-width: 960px) {
-      /* line 66, main.css.scss */
+      /* line 64, main.css.scss */
       .main_header .id_logo, .main_header .sub_logo {
         width: 100px;
         height: 100px; } }
     @media (min-width: 0) and (max-width: 768px) {
-      /* line 66, main.css.scss */
+      /* line 64, main.css.scss */
       .main_header .id_logo, .main_header .sub_logo {
         width: 74px;
         height: 74px; } }
-  /* line 84, main.css.scss */
+  /* line 82, main.css.scss */
   .main_header .sub_logo {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
     opacity: 0.3; }
-  /* line 88, main.css.scss */
+  /* line 86, main.css.scss */
   .main_header .main_nav {
     height: 40px;
     position: absolute;
@@ -4668,15 +4668,15 @@ body {
     background: none;
     padding: 0;
     min-width: 0; }
-    /* line 97, main.css.scss */
+    /* line 95, main.css.scss */
     .main_header .main_nav.stickied {
       right: 1%; }
     @media (min-width: 0) and (max-width: 960px) {
-      /* line 88, main.css.scss */
+      /* line 86, main.css.scss */
       .main_header .main_nav {
         top: 0;
         height: 30px; } }
-    /* line 106, main.css.scss */
+    /* line 104, main.css.scss */
     .main_header .main_nav .nav_block {
       height: 100%;
       width: 120px;
@@ -4686,52 +4686,52 @@ body {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
       opacity: 0.6; }
       @media (min-width: 0) and (max-width: 960px) {
-        /* line 106, main.css.scss */
+        /* line 104, main.css.scss */
         .main_header .main_nav .nav_block {
           width: 90px; } }
       @media (min-width: 0) and (max-width: 768px) {
-        /* line 106, main.css.scss */
+        /* line 104, main.css.scss */
         .main_header .main_nav .nav_block {
           margin: 0; }
-          /* line 121, main.css.scss */
+          /* line 119, main.css.scss */
           .main_header .main_nav .nav_block ~ .nav_block {
             display: none; } }
-      /* line 126, main.css.scss */
+      /* line 124, main.css.scss */
       .main_header .main_nav .nav_block:first-of-type {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
         opacity: 0.8; }
-      /* line 130, main.css.scss */
+      /* line 128, main.css.scss */
       .main_header .main_nav .nav_block:last-of-type {
         margin-right: 0; }
 
-/* line 138, main.css.scss */
+/* line 136, main.css.scss */
 .hero_slider {
   width: 100%;
   background: #e8e8e8; }
-  /* line 142, main.css.scss */
+  /* line 140, main.css.scss */
   .hero_slider .outer {
     width: 100%;
     padding-top: 40%;
     position: relative; }
-  /* line 148, main.css.scss */
+  /* line 146, main.css.scss */
   .hero_slider .inner {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0; }
-  /* line 156, main.css.scss */
+  /* line 154, main.css.scss */
   .hero_slider .hero_nav {
     width: 100%;
     height: 40px;
     background: #b5b5b5;
     text-align: center; }
-    /* line 162, main.css.scss */
+    /* line 160, main.css.scss */
     .hero_slider .hero_nav .hero_buttons {
       margin: 0 auto;
       width: 110px;
       height: 100%; }
-      /* line 167, main.css.scss */
+      /* line 165, main.css.scss */
       .hero_slider .hero_nav .hero_buttons .hero_button {
         background: #cfcfcf;
         float: left;
@@ -4742,13 +4742,14 @@ body {
         border-radius: 50%;
         width: 20px;
         height: 20px;
-        margin: 10px 0 0 10px; }
-        /* line 175, main.css.scss */
+        margin: 10px 0 0 10px;
+        behavior: url(PIE.htc); }
+        /* line 174, main.css.scss */
         .hero_slider .hero_nav .hero_buttons .hero_button:first-of-type {
           margin-left: 0;
           background: #e0876b; }
 
-/* line 185, main.css.scss */
+/* line 184, main.css.scss */
 .middle_content {
   width: 100%;
   padding-bottom: 5%;
@@ -4765,26 +4766,26 @@ body {
   background-image: linear-gradient(top, #ffffff 20%, rgba(255, 255, 255, 0) 100%), url(../images/noisy_grid.png);
   background-size: auto; }
 
-/* line 201, main.css.scss */
+/* line 200, main.css.scss */
 .main_case_study {
   text-align: center; }
-  /* line 204, main.css.scss */
+  /* line 203, main.css.scss */
   .main_case_study .content_case_study {
     width: 100%; }
-    /* line 208, main.css.scss */
+    /* line 207, main.css.scss */
     .main_case_study .content_case_study .copy_case_study {
       width: 50%;
       float: left;
       padding-left: 10%;
       text-align: left; }
       @media (min-width: 0) and (max-width: 768px) {
-        /* line 208, main.css.scss */
+        /* line 207, main.css.scss */
         .main_case_study .content_case_study .copy_case_study {
           float: none;
           width: 100%;
           padding: 0 10%;
           text-align: center; } }
-      /* line 221, main.css.scss */
+      /* line 220, main.css.scss */
       .main_case_study .content_case_study .copy_case_study .copy_header {
         font-size: 3.75em;
         word-spacing: -0.9em;
@@ -4792,18 +4793,18 @@ body {
         color: #8e8083;
         max-width: 80%; }
         @media (min-width: 0) and (max-width: 1200px) {
-          /* line 221, main.css.scss */
+          /* line 220, main.css.scss */
           .main_case_study .content_case_study .copy_case_study .copy_header {
             font-size: 2.5em; } }
         @media (min-width: 0) and (max-width: 960px) {
-          /* line 221, main.css.scss */
+          /* line 220, main.css.scss */
           .main_case_study .content_case_study .copy_case_study .copy_header {
             font-size: 1.875em; } }
         @media (min-width: 0) and (max-width: 768px) {
-          /* line 221, main.css.scss */
+          /* line 220, main.css.scss */
           .main_case_study .content_case_study .copy_case_study .copy_header {
             display: inline-block; } }
-      /* line 240, main.css.scss */
+      /* line 239, main.css.scss */
       .main_case_study .content_case_study .copy_case_study .copy {
         font-size: 1.25em;
         line-height: 1.25em;
@@ -4812,30 +4813,30 @@ body {
         max-width: 95%;
         margin-top: 1.25em; }
         @media (min-width: 0) and (max-width: 1200px) {
-          /* line 240, main.css.scss */
+          /* line 239, main.css.scss */
           .main_case_study .content_case_study .copy_case_study .copy {
             font-size: 1em; } }
         @media (min-width: 0) and (max-width: 960px) {
-          /* line 240, main.css.scss */
+          /* line 239, main.css.scss */
           .main_case_study .content_case_study .copy_case_study .copy {
             font-size: 0.875em; } }
-    /* line 258, main.css.scss */
+    /* line 257, main.css.scss */
     .main_case_study .content_case_study .figure_case_study {
       width: 50%;
       float: right;
       background: #86b3e9; }
       @media (min-width: 0) and (max-width: 768px) {
-        /* line 258, main.css.scss */
+        /* line 257, main.css.scss */
         .main_case_study .content_case_study .figure_case_study {
           width: 90%;
           float: none;
           margin: -10px auto 20px auto; } }
-      /* line 269, main.css.scss */
+      /* line 268, main.css.scss */
       .main_case_study .content_case_study .figure_case_study .outer {
         width: 100%;
         padding-top: 50%;
         position: relative; }
-      /* line 275, main.css.scss */
+      /* line 274, main.css.scss */
       .main_case_study .content_case_study .figure_case_study .inner {
         position: absolute;
         top: 0;
@@ -4843,22 +4844,22 @@ body {
         right: 0;
         bottom: 0; }
 
-/* line 287, main.css.scss */
+/* line 286, main.css.scss */
 .case_study_grid {
   width: 100%;
   margin-top: 50px;
   padding: 0 6%; }
-  /* line 292, main.css.scss */
+  /* line 291, main.css.scss */
   .case_study_grid .grid_content {
     width: 100%;
     height: 100%;
     text-align: center; }
-    /* line 297, main.css.scss */
+    /* line 296, main.css.scss */
     .case_study_grid .grid_content .small-block-grid-10 {
       max-width: 1140px;
       margin: 0 auto;
       text-align: center; }
-    /* line 303, main.css.scss */
+    /* line 302, main.css.scss */
     .case_study_grid .grid_content .block_grid {
       width: 200px;
       height: 200px;
@@ -4867,62 +4868,62 @@ body {
       display: inline-block;
       float: none; }
       @media (min-width: 0) and (max-width: 1200px) {
-        /* line 303, main.css.scss */
+        /* line 302, main.css.scss */
         .case_study_grid .grid_content .block_grid {
           width: 150px;
           height: 150px; } }
       @media (min-width: 0) and (max-width: 960px) {
-        /* line 303, main.css.scss */
+        /* line 302, main.css.scss */
         .case_study_grid .grid_content .block_grid {
           width: 100px;
           height: 100px; } }
       @media (min-width: 0) and (max-width: 768px) {
-        /* line 303, main.css.scss */
+        /* line 302, main.css.scss */
         .case_study_grid .grid_content .block_grid {
           width: 100px;
           height: 100px; } }
 
-/* line 328, main.css.scss */
+/* line 327, main.css.scss */
 .build_custom {
   margin-top: 100px;
   padding: 0 5%; }
-  /* line 332, main.css.scss */
+  /* line 331, main.css.scss */
   .build_custom .venn_container {
     text-align: center; }
-    /* line 335, main.css.scss */
+    /* line 334, main.css.scss */
     .build_custom .venn_container .venn {
       width: 25%;
       display: inline-block;
       position: relative; }
       @media (min-width: 0) and (max-width: 960px) {
-        /* line 340, main.css.scss */
+        /* line 339, main.css.scss */
         .build_custom .venn_container .venn:first-of-type {
           display: block;
           margin: 0 auto;
           top: 20px; } }
       @media (min-width: 0) and (max-width: 960px) {
-        /* line 335, main.css.scss */
+        /* line 334, main.css.scss */
         .build_custom .venn_container .venn {
           width: 35%; } }
       @media (min-width: 0) and (max-width: 768px) {
-        /* line 335, main.css.scss */
+        /* line 334, main.css.scss */
         .build_custom .venn_container .venn {
           width: 50%;
           display: block;
           margin: 0 auto; } }
-      /* line 358, main.css.scss */
+      /* line 357, main.css.scss */
       .build_custom .venn_container .venn .outer {
         width: 100%;
         padding-top: 100%;
         position: relative; }
-        /* line 363, main.css.scss */
+        /* line 362, main.css.scss */
         .build_custom .venn_container .venn .outer .inner {
           position: absolute;
           top: 0;
           left: 0;
           right: 0;
           bottom: 0; }
-      /* line 372, main.css.scss */
+      /* line 371, main.css.scss */
       .build_custom .venn_container .venn .text_container {
         position: absolute;
         top: -10%;
@@ -4936,7 +4937,8 @@ body {
         -o-border-radius: 50%;
         border-radius: 50%;
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-        opacity: 0.2; }
+        opacity: 0.2;
+        behavior: url(PIE.htc); }
 
 /* line 387, main.css.scss */
 .follow {
