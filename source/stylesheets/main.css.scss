@@ -8,7 +8,7 @@ $footer_dark_blue: #365a7e;
 $test_grey: #E8E8E8;
 
 // Variables | Functions
-$breakpoints: 'default' (0 768px);
+$breakpoints: 'default' (0 768px), 'large' (0 960px), 'xlarge' (0 1200px);
 
 // Typography
 
@@ -23,6 +23,35 @@ body {
   margin: 1% auto 0 auto;
   background: white;
   position: relative;
+}
+
+// Reusable bits
+
+.top_header {
+  width: 400px;
+  margin: 0 auto;
+  padding: emCalc(10px) emCalc(30px);
+  border-bottom: 2px solid lighten($off_black, 60%);
+  margin-bottom: 50px;
+  
+  @include respond-to('default') {
+    width: 300px;
+  }
+
+  &.flipped {
+    border-bottom: none;
+    border-top: 2px solid lighten($off_black, 60%);
+  }
+
+  .top_header_text {
+    width: 100%;
+    height: 40px;
+    background: $main_orange;
+
+    @include respond-to('default') {
+      height: 30px;
+    }
+  }
 }
 
 // header
@@ -40,6 +69,16 @@ body {
     background: $off_black;
     float: left;
     @include opacity(0.8);
+
+    @include respond-to('large') {
+      width: 100px;
+      height: 100px;
+    }
+
+    @include respond-to('default') {
+      width: 74px;
+      height: 74px;
+    }
   }
 
   .sub_logo {
@@ -51,6 +90,18 @@ body {
     position: absolute;
     right: 0;
     top: 60px;
+    background: none;
+    padding: 0;
+    min-width: 0;
+    
+    &.stickied {
+      right: 1%;
+    }
+
+    @include respond-to('large') {
+      top: 0;
+      height: 30px;
+    }
 
     .nav_block {
       height: 100%;
@@ -59,6 +110,18 @@ body {
       margin-right: 2px;
       background: $off_black;
       @include opacity(0.6);
+
+      @include respond-to('large') {
+        width: 90px;
+      }
+
+      @include respond-to('default') {
+        margin: 0;
+
+        & ~ .nav_block {
+          display: none;
+        }
+      }
       
       &:first-of-type {
         @include opacity(0.8);
@@ -138,20 +201,6 @@ body {
 .main_case_study {
   text-align: center;
 
-  .top_header {
-    width: 400px;
-    margin: 0 auto;
-    padding: emCalc(10px) emCalc(30px);
-    border-bottom: 2px solid lighten($off_black, 60%);
-    margin-bottom: 50px;
-
-    .top_header_text {
-      width: 100%;
-      height: 40px;
-      background: $main_orange;
-    }
-  }
-
   .content_case_study {
     width: 100%;
 
@@ -161,6 +210,13 @@ body {
       float: left;
       padding-left: 10%;
       text-align: left;
+
+      @include respond-to('default') {
+        float: none;
+        width: 100%;
+        padding: 0 10%;
+        text-align: center;
+      }
       
       .copy_header {
         font-size: emCalc(60px);
@@ -168,6 +224,17 @@ body {
         line-height: emCalc(20px);
         color: lighten($off_black, 40%);
         max-width: 80%;
+
+        @include respond-to('xlarge') {
+          font-size: emCalc(40px);
+        }
+        @include respond-to('large') {
+          font-size: emCalc(30px);
+        }
+
+        @include respond-to('default') {
+          display: inline-block;
+        }
       }
 
       .copy {
@@ -177,14 +244,27 @@ body {
         word-spacing: -0.7em;
         max-width: 95%;
         margin-top: emCalc(20px);
+
+        @include respond-to('xlarge') {
+          font-size: emCalc(16px);
+        }
+        @include respond-to('large') {
+          font-size: emCalc(14px);
+        }
       }
     }
 
     // current case study figure
     .figure_case_study {
       width: 50%;
-      float: left;
+      float: right;
       background: #86b3e9;
+
+      @include respond-to('default') {
+        width: 90%;
+        float: none;
+        margin: -10px auto 20px auto;
+      }
 
       .outer {
         width: 100%;
@@ -213,12 +293,131 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
-    
-    .grid_block {
+
+    .small-block-grid-10 {
+      max-width: 1140px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .block_grid {
       width: 200px;
       height: 200px;
-      float: left;
-      background: red;
+      background: #86b3e9;
+      margin: 1%;
+      display: inline-block;
+      float: none;
+
+      @include respond-to('xlarge') {
+        width: 150px;
+        height: 150px;
+      }
+      @include respond-to('large') {
+        width: 100px;
+        height: 100px;
+      }
+      @include respond-to('default') {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+// Build custom
+.build_custom {
+  margin-top: 100px;
+  padding: 0 5%;
+
+  .venn_container {
+    text-align: center;
+
+    .venn {
+      width: 25%;
+      display: inline-block;
+      position: relative;
+
+      &:first-of-type {
+        @include respond-to('large') {
+          display: block;
+          margin: 0 auto;
+          top: 20px;
+        }
+      }
+
+      @include respond-to('large') {
+        width: 35%;
+      }
+
+      @include respond-to('default') {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .outer {
+        width: 100%;
+        padding-top: 100%; // aspect ratio
+        position: relative;
+
+        .inner {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
+
+      .text_container {
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        right: -10%;
+        bottom: -10%;
+        background: red;
+        @include border-radius(50%);
+        @include opacity(0.2);
+      }
+    }
+  }
+}
+
+// Follow us
+.follow {
+  margin-top: 120px;
+
+  .blogs {
+    margin: 0 auto;
+    max-width: 1000px;
+
+    @include respond-to('xlarge') {
+      max-width: 85%;
+    }
+
+    .blog {
+      background: gray;
+      @include opacity(0.3);
+      width: 450px;
+      height: 130px;
+
+      @include respond-to('xlarge') {
+        width: 380px;
+        height: 100px;
+      }
+
+      @include respond-to('large') {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      &.left {
+        float: left;
+      }
+
+      &.right {
+        float: right;
+      }
     }
   }
 }
