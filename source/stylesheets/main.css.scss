@@ -171,6 +171,7 @@ body {
         width: 20px;
         height: 20px;
         margin: 10px 0 0 10px;
+        behavior: url(PIE.htc);
 
         &:first-of-type {
           margin-left: 0;
@@ -378,6 +379,7 @@ body {
         background: red;
         @include border-radius(50%);
         @include opacity(0.2);
+        behavior: url(PIE.htc);
       }
     }
   }
